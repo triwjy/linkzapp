@@ -1,0 +1,19 @@
+.title-text {
+  color: gray;
+  font-size: 1.2em;
+  padding: 0px 15% 2%;
+  text-align: center;
+}
+
+.description-text {
+  font-size: 1.2em;
+  color: gray;
+  padding: 0 15% 1%;
+  text-align: center;
+}
+
+.btn-open {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}

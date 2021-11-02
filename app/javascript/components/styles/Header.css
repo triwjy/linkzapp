@@ -1,0 +1,28 @@
+.header {
+  align-items: center;
+  /* background-color: black; */
+  /* background-color: #253053; */
+  background-color: aliceblue;
+  color: white;
+  display: flex;
+  font-size:2em;
+  font-weight: bold;
+  height: 7%;
+  justify-content: flex-start;
+  padding: 10px 10px 10px 20px;
+}
+
+.header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.header ul li a {
+  margin: 5px 15px;
+}
+
+.header ul li a:hover {
+  color: lightblue;
+}

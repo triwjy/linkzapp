@@ -1,0 +1,9 @@
+one:
+  name: FirstApp
+  hyperlink: www.firstapp.com
+  description: this is the first example app
+
+two:
+  name: SecondApp
+  hyperlink: www.secondapp.com
+  description: this is the second example app

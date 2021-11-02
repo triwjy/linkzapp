@@ -1,0 +1,16 @@
+FROM ruby:3.0.2-slim-bullseye
+
+RUN bundle config --global frozen 1
+
+WORKDIR /usr/src/app
+
+COPY Gemfile Gemfile.lock package.json yarn.lock ./
+
+RUN apt update && apt-get install libsqlite3-dev -y && apt install npm -y && npm install -g yarn -y
+RUN yarn install && bundle install
+
+COPY . .
+
+RUN rails db:migrate && rails webpacker:install && rails webpacker:install:react && rails webpacker:compile
+
+CMD ["rails", "server", "-b", "0.0.0.0"]

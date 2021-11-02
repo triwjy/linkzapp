@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Linkapps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @linkapps.each do |linkapp| %>
+      <tr>
+        <td><%= linkapp.name %> - <%= linkapp.hyperlink %></td>
+        <td><%= link_to 'Show', linkapp %></td>
+        <td><%= link_to 'Edit', edit_linkapp_path(linkapp) %></td>
+        <td><%= link_to 'Destroy', linkapp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Linkapp', new_linkapp_path %>
