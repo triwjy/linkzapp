@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Web app with Rails backend API and React webpack for storing all in-house web-app's hyperlinks
 
-Things you may want to cover:
+## Test
 
-* Ruby version
+`rails t`
 
-* System dependencies
+## Start
 
-* Configuration
+`rails s`
 
-* Database creation
+## Docker deployment
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`docker run -p 3000:3000 triwjy/linkzapp`

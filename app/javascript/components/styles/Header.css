@@ -3,9 +3,9 @@
   /* background-color: black; */
   /* background-color: #253053; */
   background-color: aliceblue;
-  color: white;
+  color: black;
   display: flex;
-  font-size:2em;
+  font-size: 2em;
   font-weight: bold;
   height: 7%;
   justify-content: flex-start;
